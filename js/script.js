@@ -2,7 +2,7 @@ const shuttleSorting = function (apex, $) {
     "use strict";
     const featureDetails = {
         name: "CB.DEV.SHUTTLE.SORTING.FILTER",
-        scriptVersion: "23.10.10"
+        scriptVersion: "23.10.12"
     };
 
     return {
@@ -143,7 +143,10 @@ const shuttleSorting = function (apex, $) {
                     });
                 $($shuttle).prepend(
                     $("<div/>", {
-                        "class": "t-Form-itemWrapper"
+                        "class": "t-Form-itemWrapper",
+                        "css": {
+                            "align-items": "center"
+                        }
                     })
                         .append($filter).append(
                             $("<span/>", {
